@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fundo3.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding: 20px;
+    color: rgb(0, 0, 0); 
+}
+
+h1 {
+    text-align: center;
+    color: white; 
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center; /* Centraliza os elementos filhos horizontalmente */
+    margin-bottom: 20px;
+}
+
+.filters select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin: 0 10px; /* Espaço entre os filtros */
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.character-card {
+    background-color: rgb(255, 255, 255); 
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease; /* Transição suave ao aumentar o cartão */
+    overflow: hidden; /* Evita que o conteúdo transborde */
+}
+
+.character-card:hover {
+    transform: scale(1.05); /* Aumenta o cartão ao passar o mouse */
+}
+
+.character-details {
+    display: none; /* Oculta os detalhes por padrão */
+}
+
+.character-card:hover .character-details {
+    display: block; /* Mostra os detalhes ao passar o mouse */
+}
+
+.favorite {
+    position: absolute;
+    top: 10px; /* Ajuste a posição vertical se necessário */
+    left: 50%; /* Centraliza horizontalmente */
+    transform
